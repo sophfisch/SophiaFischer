@@ -1,0 +1,38 @@
+Pycharm
+• What is CNV/CNA?-->copy number variations/aberrations
+abberations= an unusual number of copies, present in most cancer types
+
+• How will you describe or introduce progenetix (scale, data source, cancer types and
+so on)?--> goal: individual cancer profiles and associated metadata for more integrative analyses of cancer
+publicly accessible gnome data resource
+
+The cancer profile data in Progenetix was curated from 1600 articles and represents 420 and 542 different cancer types, according to the International classification of Diseases in Oncology (ICD-O) and NCIt "neoplasm" classification, respectively. Additionally, the website attempts to identify and present all publications (currently 3962 articles), referring to cancer genome profiling experiments.
+
+• Describe NCIt, ICOD, UBERON codes, and their relationships.
+NCIt= National Cancer Institue Thesaurus
+ICDO= International Classification of Diseases in Oncology
+
+NCIts are rarely used in primary sample annotations
+progenetix has connected NCIt and ICDO in a GitHub repository
+
+• What are CNV segmentations and CNV frequencies, and how to use them?
+• What are APIs and how to use APIs in progenetix?
+Beacon is an API (sometimes extended with a user interface) that allows for data discovery of genomic and phenoclinic data.
+• How does progenetix visualise CNA profiles?
+json or csv document with an overview containing results, biosamples, biosamples map, variants
+also custom visualization possible
+• What do you think should be improved in progenetix?
+being able to assign the data to a specific date to see progression of genetic variants
+
+Screen Shot 2022-09-21 at 14.41.47
+
+
+
+notes:
+GEO=Gene Expression Omnibus
+UBERON is a crossspecies system, allows linking multiple databases between model animals and humans
+
+progenetix includes geographic coordinates to each indicvidual sample using GeoNames
+progenetix also contains grouping by ancestry, important because genetic background seems to influence tumor development
+
+Cancer dcell lines are important models for understanding the molecular mechanisms of malignant diseases and have a prominent role in pharmacological screening procedures
