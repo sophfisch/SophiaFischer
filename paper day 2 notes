@@ -9,20 +9,23 @@ publicly accessible gnome data resource
 The cancer profile data in Progenetix was curated from 1600 articles and represents 420 and 542 different cancer types, according to the International classification of Diseases in Oncology (ICD-O) and NCIt "neoplasm" classification, respectively. Additionally, the website attempts to identify and present all publications (currently 3962 articles), referring to cancer genome profiling experiments.
 
 • Describe NCIt, ICOD, UBERON codes, and their relationships.
-NCIt= National Cancer Institue Thesaurus
-ICDO= International Classification of Diseases in Oncology
+NCIt= National Cancer Institue Thesaurus, 
+NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities.
+ICDO= International Classification of Diseases in Oncology, The International Classification of Diseases for Oncology (ICD-O) is a domain-specific extension of the International Statistical Classification of Diseases and Related Health Problems for tumor diseases. This classification is widely used by cancer registries.
 
 NCIts are rarely used in primary sample annotations
 progenetix has connected NCIt and ICDO in a GitHub repository
 
 • What are CNV segmentations and CNV frequencies, and how to use them?
+CNV segmentaitons are the locations in the genome where the CNVs are found
+CNV frequencies are the amount of times the variations arrise
 • What are APIs and how to use APIs in progenetix?
 Beacon is an API (sometimes extended with a user interface) that allows for data discovery of genomic and phenoclinic data.
 • How does progenetix visualise CNA profiles?
-json or csv document with an overview containing results, biosamples, biosamples map, variants
-also custom visualization possible
+json or csv document with an overview containing results (genome-wide CNAm different colors for loss and gain), biosamples (discriptions, classifications, external identifiers), biosamples map (geological locations), variants (concatenated format with chromosome, start and eng position, and type of the CNA)
+also custom visualization possible (publication title, author names, geographic location of research center
 • What do you think should be improved in progenetix?
-being able to assign the data to a specific date to see progression of genetic variants
+function of being able to assign the data to a specific date to see progression of genetic variants, allows filtering for CNAs that have only popped up recently
 
 ![pic1] ("https://user-images.githubusercontent.com/114056080/191511945-f6efd91c-f508-4061-9527-9e6d536b9a44.png")
 
