@@ -67,7 +67,7 @@ bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
   -b  ~/course/soft/bedtools2/test/intersect/b.bed
   
-  ##vcf
+ # vcf
   vcftools: mainly to summarize data, run calculations on data, filter out data, and convert data into other useful file formats \
   --vcf defines which vcf to process
 
