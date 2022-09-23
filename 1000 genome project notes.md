@@ -1,4 +1,4 @@
-# file types
+# file types overview
 FASTA (stores a variable number of sequence records, and for each record it stores the sequence itself, and a sequence ID) \
 FASTQ (header, sequence, comment, quality) \
 SAM/BAM (Alignments, mapping. SAM is human readable and BAM is binary) \
@@ -42,9 +42,8 @@ awk -v OFS='\t' '{print $1,$2,$3,".",0,"."}' \
 cd - ## to go back to the previous directory
 
 ## bedtools 
->https://github.com/compbiozurich/UZH-BIO392/blob/imallona/ 
+>https://github.com/compbiozurich/UZH-BIO392/blob/imallona/course-material/2022/imallona/exercises.md 
 
-course-material/2022/imallona/exercises.md
 By far, the most common question asked of two sets of genomic features is whether or not any of the features in the two sets “overlap” with one another. This is known as feature intersection. bedtools intersect allows one to screen for overlaps between two sets of genomic features. Moreover, it allows one to have fine control as to how the intersections are reported. bedtools intersect works with both BED/GFF/VCF and BAM files as input.
 paper on bedtools:
 
@@ -91,6 +90,7 @@ Ctrl+E or End: Go to the end of the line.
 echo "hello there"
 echo "hello there" | sed "s/hello/hi/"
 echo "hello there" | sed "s/hello/hi/" | sed "s/there/world/"
+
 ## redirecting the standard output to a file
 echo hello > newfile.txt
 ls -l newfile.txt
