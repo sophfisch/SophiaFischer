@@ -52,7 +52,11 @@ paper on bedtools:
 ### intersect
 bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
-  -b  ~/course/soft/bedtools2/test/intersect/b.bed
+  -b  ~/course/soft/bedtools2/test/intersect/b.bed \
+  
+The -wa (write A) and -wb (write B) options allow one to see the original records from the A and B files that overlapped. As such, instead of not only showing you where the intersections occurred, it shows you what intersected. \
+The -wo (write overlap) option allows one to also report the number of base pairs of overlap between the features that overlap between each of the files. \
+
 ### intersect only on same strand
 bedtools intersect \
   -s \
@@ -101,4 +105,8 @@ echo hello | sed 's/hello/hElLo/' > newfile2.txt \
 ls -l newfile2.txt \
 cat newfile2.txt \
 find ~/course/soft/vcftools_0.1.13 -name "*vcf*" -type f #find all files in the program that containt vcf in name and are of type f
+
+## also good to know
+often there are different coordinates for e.g. chromosomes--> if want to intersect, have to convert them into same format (sed 's/^chr//g' exons.bed > exons_nochr.bed) \
+bedtools is much faster with presorted data
 
