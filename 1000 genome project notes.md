@@ -67,9 +67,10 @@ bedtools intersect \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
   -b  ~/course/soft/bedtools2/test/intersect/b.bed
   
- # vcf
+ # VCF
   vcftools: mainly to summarize data, run calculations on data, filter out data, and convert data into other useful file formats \
-  --vcf defines which vcf to process
+  --vcf defines which vcf to process \ 
+  --chr filters for chromosomes
 
 
 # useful
@@ -96,8 +97,8 @@ ls -l newfile.txt
 cat newfile.txt
 
 ## piping commands and redirecting to a file
-echo hello | sed 's/hello/hElLo/' > newfile2.txt
-ls -l newfile2.txt
-cat newfile2.txt
-find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f #find all files in the program that containt *vcf in name and are of type f
+echo hello | sed 's/hello/hElLo/' > newfile2.txt \
+ls -l newfile2.txt \
+cat newfile2.txt \
+find ~/course/soft/vcftools_0.1.13 -name "*vcf*" -type f #find all files in the program that containt vcf in name and are of type f
 
