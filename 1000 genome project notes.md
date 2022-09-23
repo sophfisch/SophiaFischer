@@ -33,8 +33,6 @@ BED3 and name, score, strand \
 chr22 1000 5000 cloneA 960 + \
 chr22 2000 6000 cloneB 900 - \
 
-## to go to the a.bed file directory
-cd ~/course/soft/bedtools2/test/intersect/
 
 awk -v OFS='\t' '{print $1,$2,$3,".",0,"."}' \
   recordsOutOfOrder.bed
