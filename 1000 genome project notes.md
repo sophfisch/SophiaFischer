@@ -4,10 +4,10 @@ FASTQ (header, sequence, comment, quality) \
 SAM/BAM (Alignments, mapping. SAM is human readable and BAM is binary) \
 BED (Genomic ranges) \
 GFF/GTF (Gene annotation) \
-BEDgraphs (Genomic ranges) \
-Wiggle les, BEDgraphs and BigWigs (Genomic scores) \
+BEDgraphs (Genomic ranges, display continuous-valued data in track format, useful for probability scores) \
+Wiggles and BigWigs (Genomic scores, avoids extra columns by using chrom, span (how long the scores are), step (pattern of starting point) etc.) \
 Indexed BEDgraphs/Wiggles \
-VCFs (variants) \
+VCFs (variants, good for comparing to reference) 
 
 # FASTQ
 ## phred
@@ -66,6 +66,10 @@ bedtools intersect \
   -wao \
   -a  ~/course/soft/bedtools2/test/intersect/a.bed \
   -b  ~/course/soft/bedtools2/test/intersect/b.bed
+  
+  ##vcf
+  vcftools: mainly to summarize data, run calculations on data, filter out data, and convert data into other useful file formats \
+  --vcf defines which vcf to process
 
 
 # useful
@@ -77,6 +81,7 @@ grep - searching for strings in files \
 wc - counting words \
 sed - stream editing files \
 awk - a full language to process texts 
+grep -look for expression/ character
 
 Ctrl+A or Home: Go to the beginning of the line. \
 Ctrl+E or End: Go to the end of the line.
@@ -94,4 +99,5 @@ cat newfile.txt
 echo hello | sed 's/hello/hElLo/' > newfile2.txt
 ls -l newfile2.txt
 cat newfile2.txt
+find ~/course/soft/vcftools_0.1.13 -name "*vcf" -type f #find all files in the program that containt *vcf in name and are of type f
 
