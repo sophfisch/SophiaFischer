@@ -108,4 +108,5 @@ find ~/course/soft/vcftools_0.1.13 -name "*vcf*" -type f #find all files in the 
 ## also good to know
 often there are different coordinates for e.g. chromosomes--> if want to intersect, have to convert them into same format (sed 's/^chr//g' exons.bed > exons_nochr.bed) \
 bedtools is much faster with presorted data
+bc - basic calculator
 
