@@ -1,7 +1,7 @@
 # file types overview
 FASTA (stores a variable number of sequence records, and for each record it stores the sequence itself, and a sequence ID) \
 FASTQ (header, sequence, comment, quality) \
-SAM/BAM (Alignments, mapping. SAM is human readable and BAM is binary) \
+SAM/BAM/ CRAM (Alignments, mapping. SAM is human readable and BAM is binary, CRAM is compressed) \
 BED (Genomic ranges) \
 GFF/GTF (Gene annotation) \
 BEDgraphs (Genomic ranges, display continuous-valued data in track format, useful for probability scores) \
